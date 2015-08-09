@@ -1,0 +1,10 @@
+#Oh-My-Zsh
+alias zshconfig="vim ~/.zshrc"
+
+#Git
+alias gs="git status"
+
+#PHP
+alias art="php artisan"
+alias phpunit="vendor/bin/phpunit"
+alias phpstart="php -S localhost:8080"
