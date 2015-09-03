@@ -1,6 +1,9 @@
 #Oh-My-Zsh
 alias zshconfig="vim ~/.zshrc"
 
+#General
+alias k="clear"
+
 #Git
 alias gs="git status"
 
