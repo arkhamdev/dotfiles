@@ -3,7 +3,7 @@ alias zshconfig="vim ~/.zshrc"
 
 #General
 alias k="clear"
-alias pyserver='open http://localhost:8888 && python -m SimpleHTTPServer'
+alias pyserver='open http://localhost:8000 && python -m SimpleHTTPServer'
 
 #Git
 alias gs="git status"
