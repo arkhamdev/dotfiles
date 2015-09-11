@@ -34,11 +34,11 @@ let g:airline_powerline_fonts=1
 let g:vim_markdown_folding_disabled=1
 
 "indenting
-set tabstop=4
+set tabstop=2
 set smarttab
-set softtabstop=4
+set softtabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set autoindent
 set copyindent
 
