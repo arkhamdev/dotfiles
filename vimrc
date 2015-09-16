@@ -16,6 +16,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
+set backspace=2
 set number
 set cursorline
 syntax enable
