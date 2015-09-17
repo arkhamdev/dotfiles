@@ -1,0 +1,18 @@
+[user]
+	name = Badr Chaouai
+	email = badr.chaouai@gmail.com
+[alias]
+  co = checkout
+[color]
+  ui = auto
+[core]
+	excludesfile = ~/.gitignore
+  editor = vim
+  autocrlf = input
+[push]
+  default = simple
+[merge]
+  tool = vimdiff
+[diff]
+  tool = vimdiff
+  prompt = false
