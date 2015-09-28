@@ -3,6 +3,10 @@
 	email = badr.chaouai@gmail.com
 [alias]
   co = checkout
+  br = branch
+  l = log
+  d = diff
+  amend = commit --amend
 [color]
   ui = auto
 [core]
