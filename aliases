@@ -1,11 +1,11 @@
-#Oh-My-Zsh
+#Config
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 
 #General
 alias k="clear"
 alias pyserver="open http://localhost:8000 && python -m SimpleHTTPServer"
-alias update="sudo brew update; brew upgrade --all; brew cleanup; npm install -g npm; npm update -g"
+alias brewup="brew update; brew upgrade --all; brew cleanup"
 
 #Git
 alias gs="git status"
