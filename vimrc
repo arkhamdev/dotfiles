@@ -9,8 +9,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'edkolev/tmuxline.vim'
 "Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
@@ -19,7 +21,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 call vundle#end()
 
-filetype plugin indent on "load filetype-specific indent files
+filetype indent on "load filetype-specific indenting
+filetype plugin on "load filetype-specific plugins
 set backspace=2 "make backspace work normally
 set number "show line numbers
 set cursorline "highlight current line
@@ -37,6 +40,9 @@ colorscheme base16-tomorrow
 "vim-airline config
 set laststatus=2
 let g:airline_powerline_fonts=1
+"let g:airline_theme='powerlineish'
+"let g:airline_enable_syntastic=1
+"let g:airline#extensions#branch#enabled=1
 
 "indenting
 set tabstop=2 "number of visual spaces per tab
