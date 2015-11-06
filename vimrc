@@ -33,6 +33,9 @@ set showmatch "highlight matching [{()}]
 "set foldmethod=indent
 
 "colors
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
 set background=dark
 let base16colorspace=256
 colorscheme base16-tomorrow

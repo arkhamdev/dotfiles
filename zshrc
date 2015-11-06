@@ -4,6 +4,7 @@ plugins=(git)
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export EDITOR="vim"
+export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.dotfiles/aliases
