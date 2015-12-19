@@ -1,10 +1,10 @@
 export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="arkham"
 
 plugins=(git)
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export EDITOR="vim"
-export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.dotfiles/aliases
@@ -15,3 +15,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
 
 # Ruby
 eval "$(rbenv init -)"
+
+# Nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

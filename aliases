@@ -4,7 +4,6 @@ alias vimconfig="vim ~/.vimrc"
 
 #General
 alias k="clear"
-alias pyserver="open http://localhost:8000 && python -m SimpleHTTPServer"
 alias brewup="brew update; brew upgrade --all; brew cleanup"
 
 #Git
