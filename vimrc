@@ -78,6 +78,7 @@ nnoremap gV `[v`]
 "open ag.vim
 "nnoremap <leader>a :Ag
 "TODO: CtrlP settings
+let g:ctrlp_custom_ignore='node_modules\|git'
 
 "Nerdtree
 map <C-n> :NERDTreeToggle<CR>
