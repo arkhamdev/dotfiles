@@ -55,7 +55,8 @@ set expandtab "turn tabs to spaces
 set smarttab "smart handling of the <Tab> key
 set autoindent
 set copyindent
-"TODO: indentation rules depending on file type
+"-- php rules
+autocmd Filetype php setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
 "search
 set incsearch "search as characters are entered
