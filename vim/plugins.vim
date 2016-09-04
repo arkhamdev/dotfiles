@@ -1,0 +1,21 @@
+"--------Plugins-Installed--------"
+call plug#begin('~/.vim/plugged')
+Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-vinegar'
+Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
+"Plug 'raimondi/delimitmate'
+Plug 'rking/ag.vim'
+Plug 'skwp/greplace.vim'
+Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'Valloric/YouCompleteMe'
+call plug#end()

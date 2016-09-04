@@ -1,0 +1,88 @@
+set nocompatible
+"--------Plugins--------"
+so ~/.vim/plugins.vim
+
+"--------General Settings--------"
+set noerrorbells "disable error sound
+set vb t_vb= "disable error sound
+set number "show line numbers
+set colorcolumn=80 "line width delimeter
+set cursorline "highlight current line
+syntax enable "enable syntax processing
+set backspace=indent,eol,start "make backspace behave normally
+filetype indent on "load filetype-specific indenting
+
+
+"--------Colors--------"
+set background=dark
+let base16colorspace=256
+colorscheme gruvbox
+
+
+"--------Mappings--------"
+let mapleader = ',' "change leader to ,
+"jk is also <esc>
+inoremap jk <esc>
+"move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+"map search highlight removal
+nnoremap <leader><space> :nohlsearch<cr>
+
+"toggle NERDTree
+nmap <C-n> :NERDTreeToggle<cr>
+
+"CtrlP search tags
+nmap <C-R> :CtrlPBufTag<cr>
+nmap <leader><C-e> :CtrlPMRUFiles<cr>
+"Ctags
+nmap <leader>f :tag<space>
+
+"--------Search--------"
+set incsearch "search as characters are entered
+set hlsearch "highlight matches
+
+
+"--------Indentation--------"
+set tabstop=4 "number of visual spaces per tab
+set softtabstop=4 "number of spaces in tab when editing
+set shiftwidth=4 "numbers of spaces indented with the reindent operations
+set expandtab "turn tabs to spaces
+set smarttab "smart handling of the <Tab> key
+set autoindent
+set copyindent
+autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+
+"--------Plugins-Settings--------"
+"ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|vendor\|DS_Store\|.git'
+
+"vim-airline
+set laststatus=2
+let g:airline_powerline_fonts=1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='gruvbox'
+
+"gruvebox
+"let g:gruvbox_contrast_dark = 'hard'
+
+"NERDTree
+let NERDTreeHijackNetrw=0 "do not interfere with vinegar
+
+"Greplace
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
+
+"JSX
+let g:jsx_ext_required=0 "enable jsx in .js files
+
+"--------Auto-Commands--------"
+"Automatically source the Vimrc file on save.
+"augroup autosourcing
+"    autocmd!
+"    autocmd BufWritePost .vimrc source %
+"augroup END
