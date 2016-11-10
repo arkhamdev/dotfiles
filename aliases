@@ -1,13 +1,10 @@
 #Config
-alias zshconfig="vim ~/.zshrc"
-alias vimconfig="vim ~/.vimrc"
+alias zshconf="vim ~/.zshrc"
+alias vimconf="vim ~/.vimrc"
 
 #General
 alias k="clear"
 alias brewup="brew update; brew upgrade --all; brew cleanup"
-
-#Git
-alias gs="git status"
 
 #Vagrant
 alias vup="vagrant up"
@@ -15,6 +12,4 @@ alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 
 #PHP
-alias art="php artisan"
-alias phpunit="vendor/bin/phpunit"
 alias phpstart="php -S localhost:8080"
