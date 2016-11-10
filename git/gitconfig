@@ -1,0 +1,24 @@
+[user]
+    name = Badr Chaouai
+    email = badr.chaouai@gmail.com
+[alias]
+    s = status --short
+    ss = status
+    co = checkout
+    br = branch -v
+    d = difftool
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+    ui = auto
+[core]
+    editor = vim
+    autocrlf = input
+    excludesfile = ~/.gitignore_global
+[push]
+    default = simple
+[merge]
+    tool = vimdiff
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
